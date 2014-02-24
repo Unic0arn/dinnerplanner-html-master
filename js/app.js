@@ -10,8 +10,8 @@ $(function() {
 	var firstViewController = new FirstViewController(firstView,model);
 
 	var selectorView = new SelectorView($("#selectorView"),model);
-	var selectorViewController = new SelectorViewController(firstView,model);
+	var selectorViewController = new SelectorViewController(selectorView,model);
 
-	var exampleView = new ExampleView($("#exampleView"),model);
-   	var exampleViewController = new ExampleViewController(exampleView,model);
+	var cartView = new CartView($("#cartView"),model);
+   	var cartViewController = new CartViewController(cartView,model);
 });

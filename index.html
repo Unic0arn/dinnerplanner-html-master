@@ -28,29 +28,37 @@
 		<div id="selectorView">
 			<div id="cart" class="col-lg-2">
 				<h2>My Dinner</h2>
+				<div id="cartView">
+					<div>
+						Number of guest <span id="numberOfGuests"></span>
+					</div>
+					<div>
+						<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
+					    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
+					</div>
+				</div>
 			</div>
 			<div id="dishes" class="col-lg-10">
 				<div id="dishesHeader" class="col-lg-12">
 				<h2>Select Dish</h2>
-
-
+					Search by name or ingredient 
+					<input id="dishSearchString" type="text" name="string" value="">
+					<button id="searchButton" class="btn">Search</button>
+					Search by type 
+					<select id="typeSelect" name="type">
+						<option value="starter">Starter</option>
+						<option value="main dish">Main</option>
+						<option value="dessert">Dessert</option>
+					</select>
 				</div>
 				<div id="dishList" class="col-lg-12">
 
-				
+
 				</div>
 			</div>
 		</div>
 
-		<div id="exampleView">
-			<div>
-				Number of guest <span id="numberOfGuests"></span>
-			</div>
-			<div>
-				<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
-			    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
-			</div>
-		</div>
+		
 	</div>
 
     <!-- jQuery -->
@@ -61,8 +69,8 @@
 	<!-- The application JavaScript code -->
 	<script src="js/app.js"></script>
 	<script src="js/model/dinnerModel.js"></script>
-	<script src="js/view/exampleView.js"></script>
-	<script src="js/view/exampleViewController.js"></script>
+	<script src="js/view/cartView.js"></script>
+	<script src="js/view/cartViewController.js"></script>
 	<script src="js/view/firstView.js"></script>
 	<script src="js/view/firstViewController.js"></script>
 	<script src="js/view/selectorView.js"></script>
