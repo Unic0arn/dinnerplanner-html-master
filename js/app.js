@@ -9,6 +9,9 @@ $(function() {
 	var firstView = new FirstView($("#firstView"));
 	var firstViewController = new FirstViewController(firstView,model);
 
+	var selectorView = new SelectorView($("#selectorView"),model);
+	var selectorViewController = new SelectorViewController(firstView,model);
+
 	var exampleView = new ExampleView($("#exampleView"),model);
    	var exampleViewController = new ExampleViewController(exampleView,model);
 });
