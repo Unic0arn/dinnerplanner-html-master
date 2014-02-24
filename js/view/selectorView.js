@@ -1,6 +1,6 @@
 var SelectorView = function(container, model){
 	this.container = container;
-//	$(container).hide();
+	$(container).hide();
 	// Get all the relevant elements of the view (ones that show data
   	// and/or ones that responed to interaction)
 	var dishList = container.find("#dishList");

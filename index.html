@@ -25,7 +25,7 @@
 			</div>
 		</div>
 
-		<div id="selectorView">
+		
 			<div id="cart" class="col-lg-2">
 				<h2>My Dinner</h2>
 				<div id="cartView">
@@ -38,7 +38,33 @@
 					</div>
 				</div>
 			</div>
-			<div id="dishes" class="col-lg-10">
+			<div id="dishView" class="col-lg-10">
+				<div id="dishDesc" class="col-lg-7">
+
+					
+				</div>
+				<div id="dishIngredients" class="col-lg-5">
+					<h2>Ingredients</h2>
+					<table id="ingredientTable">
+					<thead>
+					<tr>
+					<td>Amount</td><td>Unit</td><td>Item</td><td>Price</td>
+					</tr>
+					</thead>
+					<tbody id="ingredientBody">
+
+
+
+					</tbody>
+					</table>
+				</div>
+				<div id="dishPreperation" class="col-lg-12">
+					<h2>Instruktioner</h2>
+
+				</div>
+
+			</div>
+			<div id="selectorView" class="col-lg-10">
 				<div id="dishesHeader" class="col-lg-12">
 				<h2>Select Dish</h2>
 					Search by name or ingredient 
@@ -56,7 +82,6 @@
 
 				</div>
 			</div>
-		</div>
 
 		
 	</div>
@@ -75,5 +100,7 @@
 	<script src="js/view/firstViewController.js"></script>
 	<script src="js/view/selectorView.js"></script>
 	<script src="js/view/selectorViewController.js"></script>
+	<script src="js/view/dishView.js"></script>
+	<script src="js/view/dishViewController.js"></script>
   </body>
 </html>

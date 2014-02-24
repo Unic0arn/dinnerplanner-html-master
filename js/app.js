@@ -14,4 +14,7 @@ $(function() {
 
 	var cartView = new CartView($("#cartView"),model);
    	var cartViewController = new CartViewController(cartView,model);
+
+	var dishView = new DishView($("#dishView"),model);
+   	var dishViewController = new DishViewController(dishView,model);
 });
