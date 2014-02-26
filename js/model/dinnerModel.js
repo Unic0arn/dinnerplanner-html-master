@@ -245,9 +245,9 @@ var DinnerModel = function() {
 			}]
 		},{
 		'id':101,
-		'name':'MD 2',
+		'name':'Spaghetti Carbonara',
 		'type':'main dish',
-		'image':'bakedbrie.jpg',
+		'image':'SpaghettiCarbonara.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
 			'name':'ingredient 1',
@@ -267,9 +267,9 @@ var DinnerModel = function() {
 			}]
 		},{
 		'id':102,
-		'name':'MD 3',
+		'name':'Garden Salad',
 		'type':'main dish',
-		'image':'meatballs.jpg',
+		'image':'GardenSalad.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
 			'name':'ingredient 1',
@@ -289,9 +289,9 @@ var DinnerModel = function() {
 			}]
 		},{
 		'id':103,
-		'name':'MD 4',
+		'name':'Stekt Str&ouml;mming',
 		'type':'main dish',
-		'image':'meatballs.jpg',
+		'image':'stektstromming.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
 			'name':'ingredient 1',
@@ -313,7 +313,7 @@ var DinnerModel = function() {
 		'id':200,
 		'name':'Chocolat Ice cream',
 		'type':'dessert',
-		'image':'icecream.jpg',
+		'image':'ChocolateIceCream.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
 			'name':'ice cream',
@@ -337,7 +337,7 @@ var DinnerModel = function() {
 		'id':202,
 		'name':'Strawberry',
 		'type':'dessert',
-		'image':'icecream.jpg',
+		'image':'StrawberryIceCream.jpg',
 		'description':"Here is how you make it... Lore ipsum...",
 		'ingredients':[{ 
 			'name':'ice cream',
