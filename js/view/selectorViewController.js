@@ -1,8 +1,5 @@
 var SelectorViewController = function(view, model ) {
 
-
-	view.search();
-	view.displayDishes();
 	view.typeSelect.change(function(){
 		view.filter(document.getElementById("typeSelect").value);
 	});
@@ -11,4 +8,9 @@ var SelectorViewController = function(view, model ) {
 		view.search(document.getElementById("dishSearchString").value);
 	});
 
+        
+/*
+    $('#dish') //Jquery $ = jQuery
+    document.getElementById('dish'); //vanilla javascript
+*/
 }

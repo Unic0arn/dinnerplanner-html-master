@@ -1,9 +1,10 @@
 var DishView = function(container, model){
 	this.container = container;
+    $(container).hide();
+    
 
-	var dishId = 100;
-
-	dish = model.getDish(dishId);
+	this.displayDish = function(dishId){
+        	dish = model.getDish(dishId);
 
 	var dishDesc = $('#dishDesc');
 
@@ -12,17 +13,7 @@ var DishView = function(container, model){
 	dishDesc.append("<img src='images/"+dish.image+"'/>");
 	dishDesc.append("<p>" + dish.description + "</p>");
 
-	this.displayIngredients = function(){
-
 		var tb = $("#ingredientBody");
-
-		
-		
-
-
-
-
-
 		ingredients = dish.ingredients;
 		for(var i=0; i< ingredients.length; i++){
 			ingredient = ingredients[i];
@@ -35,14 +26,7 @@ var DishView = function(container, model){
 		    td3.innerHTML = ingredient.name;
 		    var td4 = document.createElement('td');
 		    td4.innerHTML = ingredient.price;
-
-
 		    tr.appendChild(td1);tr.appendChild(td2);tr.appendChild(td3);tr.appendChild(td4);
-		    
-		    
-		    
-		    
-		    
 		    tb.append(tr);
 		}
 	}

@@ -1,6 +1,6 @@
 var FirstView = function(container){
 
-	$(container).hide();
+	//$(container).hide();
 	this.container = container;
 	this.createButton = container.find("#createNew");
 

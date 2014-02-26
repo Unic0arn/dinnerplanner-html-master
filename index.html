@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Basic Drawing App</title>
 
+   
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css">
+
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
   <body>
@@ -18,7 +20,7 @@
 
 
 
-		<div id="firstView" class="col-lg-12">
+		<div id="firstView" class="col-xs-12">
 			<div id="desc">
 			<h2>A Home Dinner Service</h2>
 				<button type="button" id="createNew" class="btn btn-default">Create New Dinner</button>
@@ -26,7 +28,7 @@
 		</div>
 
 		
-			<div id="cart" class="col-lg-2">
+			<div id="cart" class="col-xs-2">
 				<h2>My Dinner</h2>
 				<div id="cartView">
 					<div>
@@ -38,12 +40,12 @@
 					</div>
 				</div>
 			</div>
-			<div id="dishView" class="col-lg-10">
-				<div id="dishDesc" class="col-lg-7">
+			<div id="dishView" class="col-xs-10">
+				<div id="dishDesc" class="col-xs-7">
 
 					
 				</div>
-				<div id="dishIngredients" class="col-lg-5">
+				<div id="dishIngredients" class="col-xs-5">
 					<h2>Ingredients</h2>
 					<table id="ingredientTable">
 					<thead>
@@ -58,26 +60,26 @@
 					</tbody>
 					</table>
 				</div>
-				<div id="dishPreperation" class="col-lg-12">
+				<div id="dishPreperation" class="col-xs-12">
 					<h2>Instruktioner</h2>
 
 				</div>
 
 			</div>
-			<div id="selectorView" class="col-lg-10">
-				<div id="dishesHeader" class="col-lg-12">
+			<div id="selectorView" class="col-xs-10">
+				<div id="dishesHeader" class="col-xs-12">
 				<h2>Select Dish</h2>
 					Search by name or ingredient 
-					<input id="dishSearchString" type="text" name="string" value="">
+					<input id="dishSearchString" class="btn" type="text" name="string" value="">
 					<button id="searchButton" class="btn">Search</button>
 					Search by type 
-					<select id="typeSelect" name="type">
+					<select id="typeSelect" class="btn" name="type">
 						<option value="starter">Starter</option>
 						<option value="main dish">Main</option>
 						<option value="dessert">Dessert</option>
 					</select>
 				</div>
-				<div id="dishList" class="col-lg-12">
+				<div id="dishList" class="col-xs-12">
 
 
 				</div>

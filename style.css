@@ -106,6 +106,7 @@ border: 3px solid black;
 	background-color: green;
 	min-height:100px;
 	color:red;
+    padding: 30px;
 }
 
 #dishPreperation{
@@ -115,5 +116,5 @@ border: 3px solid black;
 }
 
 #dishView td{
-	padding:2px 10px;
+	padding:2px 10
 }
