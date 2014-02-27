@@ -1,24 +1,28 @@
-var DishView = function(container, model){
+var DishView = function(container,main, model){
 	this.container = container;
-    $(container).hide();
-    
+    	$(container).hide();
+    	
 
 	this.displayDish = function(dishId){
         	dish = model.getDish(dishId);
+		console.log("This is the dish we are getting from id" + dishId + " : " + dish);
+		var dishDesc = $('#dishDesc');
+		dishDesc.html(""); //Clear earlier description.
+		dishDesc.append("<h2>" + dish.name + "</div>");
+		dishDesc.append("<img src='images/"+dish.image+"'/>");
+		dishDesc.append("<p>" + dish.description + "</p>");
 
-	var dishDesc = $('#dishDesc');
-
-
-	dishDesc.append("<h2>" + dish.name + "</div>");
-	dishDesc.append("<img src='images/"+dish.image+"'/>");
-	dishDesc.append("<p>" + dish.description + "</p>");
+		dishDesc.append("<button class='btn' id='backBtn'>Back</button>");
+		this.backBtn = $('#backBtn');
 
 		var tb = $("#ingredientBody");
+		tb.html(""); //Clear earlier ingredients.
 		ingredients = dish.ingredients;
+		
 		for(var i=0; i< ingredients.length; i++){
 			ingredient = ingredients[i];
 			var tr = document.createElement('tr');
-
+	
 		    var td1 = document.createElement('td');
 		    td1.innerHTML = ingredient.quantity;
 		    var td2 = document.createElement('td');
@@ -32,27 +36,35 @@ var DishView = function(container, model){
 		    tb.append(tr);
 		}
 		
-		var tr2  = document.createElement('tr');
+		// Row for button and sum
+		var tr_conf  = document.createElement('tr');
+		tr_conf.id = "conf_row";		
+		var td_cdbtn = document.createElement('td');
+		td_cdbtn.colSpan = 3;
+		var td_sum   = document.createElement('td');
+		td_sum.innerHTML = model.getDishPrice(dishId);
+		tr_conf.appendChild(td_cdbtn);
+		tr_conf.appendChild(td_sum);
 		
-		var td5 = document.createElement('td');
-		td5.innerHTML = "testar";
-		td5.class = "table-striped";
-		tb.append(tr2);
-
-
-		/*var td5 = document.createElement('td');
-		td5.innerHTML("<p>testar</p>");
-		td5.class = "table-striped";
-
-		tr.appendChild(td5);
-		tb.append(tr);
-		*/
+		tb.append(tr_conf); //append last row to table
 		
-		tb.append("<button class='btn' id='ConfirmDishBtn'>Confirm Dish</button>");
+		var cdbtn = document.createElement('button');
 
+		//Confirm dish button
+		cdbtn.className ="btn";
+		cdbtn.id = "ConfirmDishBtn";
+		cdbtn.innerHTML = "Confirm Dish";
+		
+			// Another way of creating the button (like #backBtn above):
+				//tb.append("<button class='btn' id='ConfirmDishBtn'>Confirm Dish2</button>");
+				//this.ConfirmDishBtn = $('#ConfirmDishBtn');
+		
+		td_cdbtn.appendChild(cdbtn);
+		//tb.append(cdbtn);
 
+		};
 
-	}
+	};
 
 //	$(container).hide();
 	
@@ -69,7 +81,6 @@ var DishView = function(container, model){
 		this.numberOfGuests.html(model.getNumberOfGuests());
 		this.totalPrice.html(model.getTotalMenuPrice());
 	}*/
-}
 
 
 

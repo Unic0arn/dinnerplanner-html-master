@@ -1,6 +1,7 @@
 //ExampleView Object constructor
-var CartView = function (container,model) {
-	
+var CartView = function (container,main, model) {
+	var dtb = $('#selectedDishesBody');
+	var dishes;	
 	$(cart).hide();
 	// Get all the relevant elements of the view (ones that show data
   	// and/or ones that responed to interaction)
@@ -46,6 +47,21 @@ var CartView = function (container,model) {
 	this.update = function(arg){
 		this.numberOfGuests.html(model.getNumberOfGuests());
 		this.totalPrice.html(model.getTotalMenuPrice());
+
+		dishes = model.getFullMenu();
+		dtb.html("")
+		for(var i=0; i< dishes.length; i++){
+			var tr = document.createElement('tr');
+			var td1 = document.createElement('td');
+		    td1.innerHTML = dishes[i].name;
+			td1.id = "td1";
+		    var td2 = document.createElement('td');
+			td2.id = "td2";
+		    td2.innerHTML = model.getDishPrice(dishes[i].id);
+
+  			tr.appendChild(td1);tr.appendChild(td2);
+		    dtb.append(tr);
+		}
 	}
 }
  

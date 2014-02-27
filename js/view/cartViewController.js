@@ -1,5 +1,5 @@
 //ExampleViewController Object constructor
-var CartViewController = function(view, model ) {
+var CartViewController = function(view, main, model ) {
 	
 	view.plusButton.click(function(){
 		model.setNumberOfGuests(model.getNumberOfGuests() + 1);

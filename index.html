@@ -38,6 +38,20 @@
 						<button id="plusGuest" class="btn"><span class="glyphicon glyphicon-plus"></span></button>
 					    <button id="minusGuest" class="btn"><span class="glyphicon glyphicon-minus"></span></button>
 					</div>
+					<div id="selectedMenu">
+						<table id="selectedDishes" class = "table-striped">
+							<thead>
+								<tr>
+									<td id="td1">Name</td><td id="td2">Price</td>
+								</tr>
+							</thead>
+							<tbody id="selectedDishesBody">
+
+
+
+							</tbody>
+						</table>
+					</div>
 				</div>
 			</div>
 			<div id="dishView" class="col-xs-10">
@@ -47,7 +61,7 @@
 				</div>
 				<div id="dishIngredients" class="col-xs-5">
 					<h2>Ingredients</h2>
-					<table id="ingredientTable">
+					<table id="ingredientTable" class = "table-striped">
 					<thead>
 					<tr>
 					<td>Amount</td><td>Unit</td><td>Item</td><td>Price</td>
@@ -104,5 +118,6 @@
 	<script src="js/view/selectorViewController.js"></script>
 	<script src="js/view/dishView.js"></script>
 	<script src="js/view/dishViewController.js"></script>
+	<script src="js/view/mainController.js"></script>
   </body>
 </html>

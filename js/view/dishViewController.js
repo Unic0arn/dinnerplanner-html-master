@@ -1,11 +1,16 @@
-var DishViewController = function(view, model ) {
-        
-    $('#dishList').on('click', ".dish", function( event ){
-        $('#selectorView').hide();
-        $('#dishView').show();
-        console.log(this.id    );
-        view.dishId = this.id;
-        view.displayDish(this.id);
-    });
-    
+var DishViewController = function(view,main, model ) {
+  
+
+    $('#dishView').on('click', "#backBtn", function(){
+		$('#selectorView').show();
+        $('#dishView').hide();
+
+    });	
+	$('#dishView').on('click', '#ConfirmDishBtn', function(){
+		
+		//alert(main.selectedDishId);
+		model.addDishToMenu(main.getSelectedDishId());
+	});
+
+
 }

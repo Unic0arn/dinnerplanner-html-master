@@ -1,9 +1,9 @@
 //DinnerModel Object constructor
 var DinnerModel = function() {
- 
+
 	var menu = [];
 	var numberOfGuests =3; //set default number of guests
-	menu['starter'] = 1; //set a starter to the menu, to use for testing
+	//menu['starter'] = 1; //set a starter to the menu, to use for testing
 
 
 	this.setNumberOfGuests = function(num) {
@@ -11,7 +11,7 @@ var DinnerModel = function() {
 			numberOfGuests = num;
 			notifyObservers();
 		}
-	}
+	};
 
 	this.getNumberOfGuests = function() {
 		return parseInt(numberOfGuests);
@@ -38,6 +38,7 @@ var DinnerModel = function() {
 			var dish = this.getDish(menu[key]);
 			ingredients = ingredients.concat(dish.ingredients);
 		}
+
 		return ingredients;
 	}
 
@@ -51,12 +52,23 @@ var DinnerModel = function() {
 		return sum;
 	}
 
+	this.getDishPrice = function(id) {
+		ingredients = this.getDish(id).ingredients;
+		var sum = 0;
+		for(var i=0; i< ingredients.length; i++){
+			sum = sum + ingredients[i].price;
+			console.log(ingredients[i].price);
+		}
+		return sum;
+	}
+
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
 		menu[this.getDish(id).type] = id; 
+		notifyObservers();
 	}
-
+	
 	//Removes dish from menu
 	this.removeDishFromMenu = function(id) {
 		var type = this.getDish(id).type;

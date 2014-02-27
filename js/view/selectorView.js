@@ -1,4 +1,4 @@
-var SelectorView = function(container, model){
+var SelectorView = function(container, main,model){
 	this.container = container;
 	$(container).hide();
 	// Get all the relevant elements of the view (ones that show data
@@ -11,7 +11,7 @@ var SelectorView = function(container, model){
 	this.searchButton = container.find("#searchButton");
 
 
-    this.search = function(newString){
+    	this.search = function(newString){
 		searchString = newString;
 		console.log(searchString);
 		dishes = model.getAllDishes(filter, searchString);
