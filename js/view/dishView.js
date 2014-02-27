@@ -18,6 +18,7 @@ var DishView = function(container, model){
 		for(var i=0; i< ingredients.length; i++){
 			ingredient = ingredients[i];
 			var tr = document.createElement('tr');
+
 		    var td1 = document.createElement('td');
 		    td1.innerHTML = ingredient.quantity;
 		    var td2 = document.createElement('td');
@@ -26,9 +27,31 @@ var DishView = function(container, model){
 		    td3.innerHTML = ingredient.name;
 		    var td4 = document.createElement('td');
 		    td4.innerHTML = ingredient.price;
+
 		    tr.appendChild(td1);tr.appendChild(td2);tr.appendChild(td3);tr.appendChild(td4);
 		    tb.append(tr);
 		}
+		
+		var tr2  = document.createElement('tr');
+		
+		var td5 = document.createElement('td');
+		td5.innerHTML = "testar";
+		td5.class = "table-striped";
+		tb.append(tr2);
+
+
+		/*var td5 = document.createElement('td');
+		td5.innerHTML("<p>testar</p>");
+		td5.class = "table-striped";
+
+		tr.appendChild(td5);
+		tb.append(tr);
+		*/
+		
+		tb.append("<button class='btn' id='ConfirmDishBtn'>Confirm Dish</button>");
+
+
+
 	}
 
 //	$(container).hide();
