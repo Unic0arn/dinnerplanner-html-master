@@ -123,6 +123,8 @@ table{
 	min-height:100px;
 	color:black;
     padding: 30px;
+    border-left: 3px dotted black;
+    border-bottom: 3px dotted black;
 }
 
 #dishPreperation{
@@ -144,6 +146,10 @@ table{
 #selectedMenu table #td2{
 	width: 20%;
 }
-#dishView td{
-	padding:2px 10
+#dishView{
+    padding-right:0px;
 }
+#dishView td{
+	padding: 2px;
+}
+
