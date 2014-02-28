@@ -28,9 +28,10 @@ var MainController = function(model ) {
 	var overviewView = new OverviewView($('#overviewView'), this, model);
     var overviewViewController = new OverviewViewController(overviewView, this, model);
 	views['overviewView'] = overviewView;
-	
-	
-	
+
+	var fullRecipeView = new FullRecipeView($('#fullRecipeView'), this, model);
+    var fullRecipeViewController = new FullRecipeViewController(fullRecipeView, this, model);
+	views['fullRecipeView'] = fullRecipeView;	
 	
 	
 	this.getSelectedDishId = function() {return selectedDishId;};
