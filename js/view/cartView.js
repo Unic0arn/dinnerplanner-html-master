@@ -1,13 +1,15 @@
 //ExampleView Object constructor
 var CartView = function (container,main, model) {
+	this.container = container;
 	var dtb = $('#selectedDishesBody');
 	var dishes;	
-	$(cart).hide();
+	container.hide();
 	// Get all the relevant elements of the view (ones that show data
   	// and/or ones that responed to interaction)
 	this.numberOfGuests = container.find("#numberOfGuests");
 	this.plusButton = container.find("#plusGuest");
 	this.minusButton = container.find("#minusGuest");
+	this.confirmBtn = container.find("#confirmMenuBtn");
 	
 	//Creating the components dynamically. Here we create the following HTML content:
 	//

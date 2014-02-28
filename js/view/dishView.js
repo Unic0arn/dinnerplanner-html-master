@@ -1,4 +1,4 @@
-var DishView = function(container,main, model){
+var DishView = function(container, main, model){
 	this.container = container;
     	$(container).hide();
     	

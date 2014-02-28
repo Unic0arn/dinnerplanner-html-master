@@ -23,8 +23,7 @@ padding: 30px 30px;
 	font-size: 20px;
 }
 
-
-#cart{
+#cartView{
 	background-color: rgba(255, 255, 255, 0.81);
 border: 3px solid black;
 }
@@ -152,4 +151,14 @@ table{
 #dishView td{
 	padding: 2px;
 }
+#overViewHeaderBtn{
+	padding-top: 20px;
+}
 
+#overviewHeader{
+    height: 90px;
+    background-color: rgba(187, 187, 187, 0.34);
+	padding: 10px;
+	padding-left: 30px;
+	
+}

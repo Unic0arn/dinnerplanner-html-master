@@ -8,4 +8,10 @@ var CartViewController = function(view, main, model ) {
 	view.minusButton.click(function(){
 		model.setNumberOfGuests(model.getNumberOfGuests() - 1);
 	});
+
+	view.confirmBtn.click(function(){
+		
+		main.switchView('dinnerConfirmationView');
+	}); 
+
 }
