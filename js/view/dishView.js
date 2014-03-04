@@ -12,6 +12,12 @@ var DishView = function(container, main, model){
 		dishDesc.append("<img src='images/"+dish.image+"'/>");
 		dishDesc.append("<p>" + dish.description + "</p>");
 
+		var dishPreperation = $('#dishPreperation');
+		dishPreperation.html(""); //Clear earlier preparation desc.
+		dishPreperation.html("<h2>Preparations</h2>");
+		dishPreperation.append("<p>" + dish.description + "</p>");
+		
+
 		dishDesc.append("<button class='btn' id='backBtn'>Back</button>");
 		this.backBtn = $('#backBtn');
 

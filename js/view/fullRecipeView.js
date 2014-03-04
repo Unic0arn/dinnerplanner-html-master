@@ -23,7 +23,7 @@ this.displayDishes = function(dishes){
 			var div_right 	= $(document.createElement('div'));
 			div_row.addClass("row");
 			div.addClass("col-md-8");
-			div_img.addClass("dish");
+			div_img.addClass("dishImageRecipe");
 			div_right.addClass("col-md-4");
 
 
@@ -42,9 +42,12 @@ this.displayDishes = function(dishes){
 
 			div_row.append(div);
 
-			div_right.html("<h2>Preparation</h2>");
+
+
+			div_right.html("<h2>Preparations</h2>");
+			div_right.append("<p>" + dish.description + "</p>");
 			div_row.append(div_right);
-            
+
             $('#recipeList').append(div_row);
 
 			console.log(dish);

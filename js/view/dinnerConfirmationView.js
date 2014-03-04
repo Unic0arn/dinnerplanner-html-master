@@ -3,8 +3,9 @@ var DinnerConfirmationView = function(container,main, model){
     $(container).show();
     
     this.backBtn = $('#backToSelectorBtn');
-    //But this is changed in overviewViewController when button is pressed.
-    $('#dishConfirmationHeaderText').html("<h2>My Dinner for " + model.getNumberOfGuests() + " people </h2>");
+    //But this is changed in overviewViewController when button is pressed. adding 
+    //Moved setting of dishConfirmationHeaderText to cartViewController because of bug.
+   
 	
 
 }

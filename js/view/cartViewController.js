@@ -13,6 +13,7 @@ var CartViewController = function(view, main, model ) {
 		main.switchView('dinnerConfirmationView');
 		main.showView('overviewView');
 		main.updateConfirmation();
+		$('#dishConfirmationHeaderText').html("<h2>My Dinner for " + model.getNumberOfGuests() + " people </h2>");
 		
 	}); 
 
