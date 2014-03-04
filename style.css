@@ -51,16 +51,26 @@ padding: 10px;
 #dishesHeader{
 	height: 130px;
 	background-color: rgba(202, 202, 160, 1);
-border: 3px solid black;
+	border: 3px solid black;
 
 
 }
-#dishList{
+#dishList, #menuList{
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.81);
-border: 3px solid black;
+	border: 3px solid black;
 }
 
+#menuList{
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+#fullRecipeBtn{
+	float:none;
+	margin-left:auto;
+	margin-right:auto;
+}
 #conf_row{
 	border-top: 1px solid black;
 	border-spacing: 10px;			

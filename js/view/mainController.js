@@ -43,7 +43,9 @@ var MainController = function(model ) {
 		views[newView].container.show();
 	}
 	
-	
+	this.updateConfirmation = function(){
+		overviewViewController.update();
+	}
 	
 	this.showView = function(view){
 		console.log(view);

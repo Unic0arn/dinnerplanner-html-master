@@ -12,6 +12,7 @@ var CartViewController = function(view, main, model ) {
 	view.confirmBtn.click(function(){
 		main.switchView('dinnerConfirmationView');
 		main.showView('overviewView');
+		main.updateConfirmation();
 	}); 
 
 }
