@@ -1,8 +1,8 @@
 var FullRecipeView = function(container,main, model){
 	this.container = container;
-    	//$(container).hide();
+    	$(container).hide();
 
-    	//this.btn =  $('testBtn');
+    	this.btn =  $('fullRecipeBtn');
 
     	dishes = model.getFullMenu();
 
@@ -10,7 +10,7 @@ var FullRecipeView = function(container,main, model){
     	var fullRecipeView = container.find("#fullRecipeView");
 
     	//Vi vill ju ha getFullMenu som i Cart...
-    	fullRecipeView.innerHTML("TEEEEEEEEEEEEST!");
+    //	fullRecipeView.innerHTML("TEEEEEEEEEEEEST!");
 
 
 		//Fast visa det som i displayDish....

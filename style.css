@@ -57,7 +57,7 @@ border: 3px solid black;
 }
 #dishList{
 	padding: 20px;
-	background-color: rgba(243, 243, 243, 1);
+	background-color: rgba(255, 255, 255, 0.81);
 border: 3px solid black;
 }
 
@@ -65,8 +65,6 @@ border: 3px solid black;
 	border-top: 1px solid black;
 	border-spacing: 10px;			
 }
-
-
 
 td{
 	padding: 10px;
@@ -88,8 +86,8 @@ table{
 	overflow:hidden;
 	font-size: 10px;
 	text-overflow: ellipsis;
-
--o-text-overflow: ellipsis;
+	background-color: rgba(255, 255, 255, 0.71);	
+	-o-text-overflow: ellipsis;
 }
 .dishImage{
 	height:150px;
@@ -151,11 +149,11 @@ table{
 #dishView td{
 	padding: 2px;
 }
-#overViewHeaderBtn{
+#dishConfirmationHeaderBtn{
 	padding-top: 20px;
 }
 
-#overviewHeader{
+#dishConfirmationHeader{
     height: 90px;
     background-color: rgba(187, 187, 187, 0.34);
 	padding: 10px;

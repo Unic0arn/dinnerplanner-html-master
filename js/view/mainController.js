@@ -46,9 +46,11 @@ var MainController = function(model ) {
 	
 	
 	this.showView = function(view){
+		console.log(view);
 		views[view].container.show();
 	}
 	this.hideView = function(view){
+		console.log(view);
 		views[view].container.hide();
 	}
 	
