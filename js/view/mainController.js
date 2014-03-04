@@ -46,6 +46,10 @@ var MainController = function(model ) {
 	this.updateConfirmation = function(){
 		overviewViewController.update();
 	}
+
+	this.updateRecipe = function(){
+		fullRecipeViewController.update();
+	}
 	
 	this.showView = function(view){
 		console.log(view);
@@ -61,4 +65,6 @@ var MainController = function(model ) {
 		selectedDishId = dishId;
 		dishView.displayDish(selectedDishId);
 	}
+
+
 }

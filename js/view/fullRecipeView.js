@@ -4,16 +4,52 @@ var FullRecipeView = function(container,main, model){
 
     	this.btn =  $('fullRecipeBtn');
 
-    	dishes = model.getFullMenu();
-
-    	// I denna container bör skapas en container per dish.
-    	var fullRecipeView = container.find("#fullRecipeView");
-
-    	//Vi vill ju ha getFullMenu som i Cart...
-    //	fullRecipeView.innerHTML("TEEEEEEEEEEEEST!");
 
 
-		//Fast visa det som i displayDish....
+
+
+
+
+this.displayDishes = function(dishes){
+		console.log(dishes.length);
+		$("#recipeList").html(""); //Empty recipeList.
+		for(var i=0; i < dishes.length; i++){
+			var dish = dishes[i];
+
+
+			var div_row 	= $(document.createElement('div'));
+			var div 		= $(document.createElement('div'));
+			var div_img 	= $(document.createElement('div'));
+			var div_right 	= $(document.createElement('div'));
+			div_row.addClass("row");
+			div.addClass("col-md-8");
+			div_img.addClass("dish");
+			div_right.addClass("col-md-4");
+
+
+            div.attr('id',dish.id);
+            div_right.attr('id',"preparation");
+            
+			var img = $(document.createElement('img'));
+			img.attr('src', "images/" + dish.image);
+			img.addClass("dishImage");
+
+            div_img.append(img);
+            div.append(div_img);
+
+			div.append("<h3>" + dish.name + "</h3>");
+			div.append("<p>" + dish.description + "</p>");
+
+			div_row.append(div);
+
+			div_right.html("<h2>Preparation</h2>");
+			div_row.append(div_right);
+            
+            $('#recipeList').append(div_row);
+
+			console.log(dish);
+		}
+	}    	
 
 
 
