@@ -4,6 +4,8 @@ var SelectorView = function(container, main,model){
 	// Get all the relevant elements of the view (ones that show data
   	// and/or ones that responed to interaction)
 	var dishList = container.find("#dishList");
+	
+
 	var searchString = "";
 	var filter = "starter";
 	var dishes;
@@ -40,7 +42,6 @@ var SelectorView = function(container, main,model){
 			var img = $(document.createElement('img'));
 			img.attr('src', "images/" + dish.image);
 			img.addClass("dishImage");
-
             
 			div.append(img);           
 			div.append("<h3>" + dish.name + "</h3>");

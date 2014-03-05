@@ -8,9 +8,13 @@ body{
 	width:100%;
 	padding:0px;
 }
+.btn{
+background-color: rgba(200, 233, 100, 0.30);
+border-style:solid;
+}
 #header{
 	height: 130px;
-background-color: rgba(233, 233, 69, 0.34);
+background-color: rgba(200, 233, 100, 0.34);
 border: 3px solid black;
 vertical-align: middle;
 font-size: 45px;
@@ -55,7 +59,7 @@ padding: 10px;
 
 
 }
-#dishList, #menuList, #recipeList{
+#dishList, #menuList, #menuListContainer, #recipeList{
 	padding: 20px;
 	background-color: rgba(255, 255, 255, 0.81);
 	border: 3px solid black;
@@ -66,11 +70,7 @@ padding: 10px;
 	margin-right: auto;
 	text-align: center;
 }
-#fullRecipeBtn{
-	float:none;
-	margin-left:auto;
-	margin-right:auto;
-}
+
 #conf_row{
 	border-top: 1px solid black;
 	border-spacing: 10px;			
@@ -177,6 +177,11 @@ table{
 }
 #dishConfirmationHeaderBtn{
 	padding-top: 20px;
+}
+#fullRecipeBtn{
+	float:right;
+	padding:10px;
+	margin:10px;
 }
 
 #dishConfirmationHeader{

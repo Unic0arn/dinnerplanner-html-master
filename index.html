@@ -23,7 +23,7 @@
 		<div id="firstView" class="col-xs-12">
 			<div id="desc">
 			<h2>A Home Dinner Service</h2>
-				<button type="button" id="createNew" class="btn btn-default">Create New Dinner</button>
+				<button type="button" id="createNew" class="btn">Create New Dinner</button>
 			</div>
 		</div>
 
@@ -110,8 +110,12 @@
 
             </div>
             <div id="overviewView" class="col-xs-12">
-                <div id="menuList" class="col-xs-7"></div>
-				<button id="fullRecipeBtn" class="btn">Print full recipe.</button>
+                <div id="menuListContainer" class="col-xs-7">
+                	<div id="menuList" class="row"></div>
+     				<div class="row" id="menuListBtn">
+     					<button id='fullRecipeBtn' class='btn'>Print full recipe.</button>
+     				</div>
+            	</div>
             </div>
             
             
@@ -132,7 +136,12 @@
 	</div>
 
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- <script src="https://code.jquery.com/jquery.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-1.9.1.js"></script>
+	<script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+
     <!-- Bootstrap JavaScript, needed if you want for instance tabs, models, popovers etc. -->
     <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
 

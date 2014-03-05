@@ -11,7 +11,6 @@ var OverviewViewController = function(view,main, model ) {
 		main.hideView('overviewView');
 		main.showView('fullRecipeView');
 		$('#dishConfirmationHeaderText').html("<h2>Dinner recipe for " + model.getNumberOfGuests() + " people </h2>");
-		//Probably should not be here but...
 		main.updateRecipe();
 	});
 	

@@ -65,7 +65,7 @@ var DinnerModel = function() {
 	//Adds the passed dish to the menu. If the dish of that type already exists on the menu
 	//it is removed from the menu and the new one added.
 	this.addDishToMenu = function(id) {
-		menu[this.getDish(id).type] = id; 
+		menu[this.getDish(id).type] = id;
 		notifyObservers();
 	}
 	
@@ -192,6 +192,50 @@ var DinnerModel = function() {
 			'quantity':1,
 			'unit':'',
 			'price':4
+			}]
+		},{
+				'id':4,
+		'name':'Toast Skagen',
+		'type':'starter',
+		'image':'toastskagen.jpg',
+		'description':"Toast Skagen is an elegant combination of prawns and other ingredients on a small piece of sautéed bread. Make toast. Put skagenrmix that you bought at ICA on toast. Garnish with dill.",
+		'ingredients':[{ 
+			'name':'Prawns',
+			'quantity':16,
+			'unit':'pcs',
+			'price':19
+			},{
+			'name':'mayonaise',
+			'quantity':20,
+			'unit':'g',
+			'price':10
+			},{
+			'name':'Bread',
+			'quantity':1,
+			'unit':'slices',
+			'price':2
+			}]
+		},{
+						'id':5,
+		'name':'Elk carpaccio',
+		'type':'starter',
+		'image':'elkcarpaccio.jpg',
+		'description':"Combine salt, black pepper and half the brown sugar. Place loin in a shallow pan and cover completely with mixture, top and bottom. Cover and refrigerate 8 to 12 hours.",
+		'ingredients':[{ 
+			'name':'Elk meat',
+			'quantity':100,
+			'unit':'g',
+			'price':20
+			},{
+			'name':'Olive oil',
+			'quantity':40,
+			'unit':'tbsp',
+			'price':1
+			},{
+			'name':'Parmesan cheese',
+			'quantity':1,
+			'unit':'slices',
+			'price':2
 			}]
 		},{
 		'id':100,
@@ -322,6 +366,28 @@ var DinnerModel = function() {
 			'price':4
 			}]
 		},{
+		'id':104,
+		'name':'Falukorv',
+		'type':'main dish',
+		'image':'falukorv.jpg',
+		'description':"Falukorv is a large Swedish sausage made of a grated mixture of pork and beef or veal with potato starch flour and mild spices. Note that Falukorv is a cooked sausage and can as such be eaten as is. Many Swedes slice it and eat it on a sandwich much as you would with a slice of ham.",
+		'ingredients':[{ 
+			'name':'Falukorv',
+			'quantity':1,
+			'unit':'pieces',
+			'price':1
+			},{
+			'name':'Potatoes',
+			'quantity':3,
+			'unit':'pcs',
+			'price':2
+			},{
+			'name':'Onion',
+			'quantity':1,
+			'unit':'pcs',
+			'price':1
+			}]
+		},{
 		'id':200,
 		'name':'Chocolat Ice cream',
 		'type':'dessert',
@@ -356,6 +422,23 @@ var DinnerModel = function() {
 			'quantity':100,
 			'unit':'ml',
 			'price':6
+			}]
+		},{
+		'id':203,
+		'name':'Crème brûlée',
+		'type':'dessert',
+		'image':'cremebrulee.jpg',
+		'description':"Crème brûlée, also known as burnt cream, crema catalana, or Trinity cream is a dessert consisting of a rich custard base topped with a contrasting layer of hard caramel. It is normally served at room temperature.",
+		'ingredients':[{ 
+			'name':'cream',
+			'quantity':100,
+			'unit':'ml',
+			'price':3
+			},{ 
+			'name':'sugar',
+			'quantity':10,
+			'unit':'ml',
+			'price':2
 			}]
 		}
 	];

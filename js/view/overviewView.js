@@ -1,11 +1,14 @@
 var OverviewView = function(container,main, model){
 	this.container = container;
-    	//$(container).hide();
+    	$(container).hide();
     this.btn =  $('#fullRecipeBtn');
     	
     this.displayDishes = function(dishes){
 		console.log(dishes.length);
 		$("#menuList").html(""); //Empty dishList.
+
+		var menuList = $('#menuList');
+		var menuListBtn = $('#menuListBtn');
 		for(var i=0; i < dishes.length; i++){
 			var dish = dishes[i];
 
@@ -22,10 +25,16 @@ var OverviewView = function(container,main, model){
 			div.append(img);           
 			div.append("<h3>" + dish.name + "</h3>");
 			div.append("<p>" + dish.description + "</p>");
-            
+
             $('#menuList').append(div);
+            //$('#menuList').prepend(div);
+
+           //menuList.prepend(div);
 
 			console.log(dish);
 		}
+
+		//menuListBtn.append("");
+		
 	}    	
 }
